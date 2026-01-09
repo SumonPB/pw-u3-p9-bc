@@ -3,11 +3,13 @@ import HomeView from '../views/HomeView.vue'
 
 const routes = [
   {
+    //carga eger, siempre cargada 
     path: '/',
     name: 'home',
     component: HomeView
   },
   {
+    //carga bajo demanda unicamente se carga cundo se usa la pagina
     path: '/about',
     name: 'about',
     // route level code-splitting
