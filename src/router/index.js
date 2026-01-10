@@ -19,9 +19,13 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
-  }, 
+  }, //manejo de varables dentro de la url existen dos formas pathvariable
+  //pathvariable: /ruta/:variable o /ruta?variable=valor se refiere a una variable que se puede modificar dentro del codigo
+  //request query/params usada para filtros de busqueda, no es necesario definirla en el router
+  //cuando se usa uno y otro? pathvariable se usa como un identificador unico de un recurso ej: usuario, producto es decir para mandar identificadores unicos previos a la carga de la vista
+  //request query/params se usa para filtros de busqueda ej: ordenar, paginar, buscar /estudiantes?anio=2025&provincia=pichincha
    {
-    path: '/hola',
+    path: '/hola/:id',
     name: 'hola',
     component: HolaMundo
   },
