@@ -20,7 +20,7 @@ computed:{
 },
   //Desmontaje del componente: cuando se elimina el componente del DOM
   beforeUnmount(){
-    console.log("beforeUnmount: justo antes de que el componente se destruya a")
+    console.log("beforeUnmount: justo antes de que el componente se destruya")
   },
    unmounted(){
     console.log("unmounted: el componente ya fue eliminado del DOM y se destuye")
