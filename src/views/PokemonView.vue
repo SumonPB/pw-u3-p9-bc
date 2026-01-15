@@ -79,16 +79,16 @@ components: {
     evaluarGanador(id){
       console.log("valor recibido desde padre",id)
       if(this.pokemonGanador===id){
-       /* setTimeout(()=>{
+        setTimeout(()=>{
           this.gano=false
-           //this.iniciarJuego();
-        },1000)*/
+           this.iniciarJuego();
+        },1000)
         this.gano=true
       }else{
-          /*setTimeout(()=>{
+          setTimeout(()=>{
           this.perdio=false
-          //this.iniciarJuego();
-        },1000)*/
+          this.iniciarJuego();
+        },1000)
         this.perdio=true
       }
     },
